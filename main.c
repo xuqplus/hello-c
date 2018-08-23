@@ -1,7 +1,9 @@
 #include <stdio.h>
-#include "day-00/f.c"
+#include "day00/f.c"
+#include "day01/f.c"
 
 int main() {
-    f();
+    // f();
+    floatPrint();
     return 0;
 }
