@@ -1,7 +1,7 @@
 #include <stdio.h>
-#include <zconf.h>
+#include "day-00/f.c"
 
 int main() {
-    printf("Hello, World!\n");
+    f();
     return 0;
 }
