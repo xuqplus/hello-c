@@ -4,10 +4,15 @@
 #include "day02/f.c"
 #include "day02/day02-for.c"
 
+// 函数声明
+void exexWhile();
+
 int main() {
-    // f();
-    // floatPrint();
-    // print();
-    execFor();
+//     f();
+//     floatPrint();
+//     print();
+//    execWhile();
+//    execFor();
+
     return 0;
 }

@@ -6,3 +6,10 @@ void execFor() {
         printf("%d, ", i);
     }
 }
+
+void execWhile() {
+    int i = 10;
+    while (i--){
+        printf("%d, ", i);
+    }
+}
