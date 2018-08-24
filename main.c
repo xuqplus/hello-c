@@ -4,6 +4,7 @@
 #include "day02/f.c"
 #include "day02/day02-for.c"
 #include "day02/day02-variable-define.c"
+#include "day02/day02-array.c"
 
 // 函数声明
 void exexWhile();
@@ -17,9 +18,11 @@ int main() {
 //    execWhile();
 //    execFor();
 
-    staticVariable = 99; // 静态变量值被修改
+    /*staticVariable = 99; // 静态变量值被修改
 
     variableDefine(1, 2);
-    printf("result=%d, ", variableDefine(1, 2));
+    printf("result=%d, ", variableDefine(1, 2));*/
+
+    execArray();
     return 0;
 }
