@@ -1,0 +1,1 @@
+int externIntI = 2;
