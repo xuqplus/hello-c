@@ -5,6 +5,7 @@
 #include "day02/day02-for.c"
 #include "day02/day02-variable-define.c"
 #include "day02/day02-array.c"
+#include "day02/day02-enum.c"
 
 // 函数声明
 void exexWhile();
@@ -23,6 +24,7 @@ int main() {
     variableDefine(1, 2);
     printf("result=%d, ", variableDefine(1, 2));*/
 
-    execArray();
+//    execArray();
+    execEnum();
     return 0;
 }
