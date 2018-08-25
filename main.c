@@ -28,6 +28,9 @@ int main() {
 //    execArray();
 //    execEnum();
 
-    execPointer();
+//    execPointer();
+//    execPointerDef();
+    execPointer1();
+
     return 0;
 }
