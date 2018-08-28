@@ -8,6 +8,7 @@
 #include "day02/day02-enum.c"
 #include "day03/day03-pointer.c"
 #include "day04/day04-function.c"
+#include "day04/day04-string.c"
 
 // 函数声明
 void exexWhile();
@@ -32,7 +33,11 @@ int main() {
 //    execPointer();
 //    execPointerDef();
 //    execPointer1();
+
 //    testF();
-    testExecCallback();
+//    testExecCallback();
+//    testString01();
+//    testString02();
+    testString03();
     return 0;
 }
