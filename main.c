@@ -9,6 +9,7 @@
 #include "day03/day03-pointer.c"
 #include "day04/day04-function.c"
 #include "day04/day04-string.c"
+#include "day04/day04-stdio.c"
 
 // 函数声明
 void exexWhile();
@@ -38,6 +39,8 @@ int main() {
 //    testExecCallback();
 //    testString01();
 //    testString02();
-    testString03();
+//    testString03();
+
+    testIo();
     return 0;
 }
