@@ -7,6 +7,7 @@
 #include "day02/day02-array.c"
 #include "day02/day02-enum.c"
 #include "day03/day03-pointer.c"
+#include "day04/day04-function.c"
 
 // 函数声明
 void exexWhile();
@@ -30,7 +31,7 @@ int main() {
 
 //    execPointer();
 //    execPointerDef();
-    execPointer1();
-
+//    execPointer1();
+    testF();
     return 0;
 }
