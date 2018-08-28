@@ -20,7 +20,17 @@ void testIo01() {
     return;
 }
 
+void testIo02() {
+    char c[100];
+    int i;
+    printf("Please input:");
+    scanf("%s %d", c, &i);
+    printf("\nYou input: %s %d", c, i);
+    return;
+}
+
 void testIo() {
 //    testIo00();
-    testIo01();
+//    testIo01();
+    testIo02();
 }
