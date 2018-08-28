@@ -14,3 +14,19 @@ void testF() {
     int c = f_p(1, 2);
     printf("c=%d, ", c);
 }
+
+// 回调函数, 函数指针用作参数
+int callback() {
+    printf("callback executed ..\n");
+    return 0;
+}
+
+void execCallback(int (*callback)()) {
+    for (size_t i = 0; i < 10; i++) {
+        callback();
+    }
+}
+
+void testExecCallback() {
+    execCallback(callback);
+}

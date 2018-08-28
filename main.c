@@ -32,6 +32,7 @@ int main() {
 //    execPointer();
 //    execPointerDef();
 //    execPointer1();
-    testF();
+//    testF();
+    testExecCallback();
     return 0;
 }
