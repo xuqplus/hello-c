@@ -11,6 +11,7 @@
 #include "day04/day04-string.c"
 #include "day04/day04-stdio.c"
 #include "day05/day05-file.c"
+#include "day05/day05-oc.c"
 
 // 函数声明
 void exexWhile();
@@ -44,6 +45,7 @@ int main() {
 
 //    testIo();
 
-    testFile();
+//    testFile();
+    testOc();
     return 0;
 }
