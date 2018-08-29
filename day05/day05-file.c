@@ -34,7 +34,22 @@ void testFile01() {
     fclose(file);
 }
 
+void testFile02() {
+    FILE *file = NULL;
+    char line[100];
+
+    file = fopen("C:/Users/xjplus/CLionProjects/untitled/day05/test.txt", "r");
+
+    fscanf(file, "%s %s %s %s\n", &line[0], &line[5], &line[10], &line[15]);
+    printf("%s %s %s %s\n", &line[0], &line[5], &line[10], &line[15]);
+    fscanf(file, "%s %s %s %s\n", &line[0], &line[5], &line[10], &line[15]);
+    printf("%s %s %s %s\n", &line[0], &line[5], &line[10], &line[15]);
+
+    fclose(file);
+}
+
 void testFile() {
-    testFile00();
-    testFile01();
+//    testFile00();
+//    testFile01();
+    testFile02();
 }
