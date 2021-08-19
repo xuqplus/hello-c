@@ -1,6 +1,11 @@
-cmake_minimum_required(VERSION 3.12)
-project(untitled C)
+cmake_minimum_required(VERSION 3.0.0)
+project(hello-c  VERSION 0.1.0)
 
-set(CMAKE_C_STANDARD 11)
+include(CTest)
+enable_testing()
 
-add_executable(untitled main.c)
+add_executable(hello-c  main.c)
+
+set(CPACK_PROJECT_NAME ${PROJECT_NAME})
+set(CPACK_PROJECT_VERSION ${PROJECT_VERSION})
+include(CPack)
