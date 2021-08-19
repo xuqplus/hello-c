@@ -12,6 +12,7 @@
 #include "day04/day04-stdio.c"
 #include "day05/day05-file.c"
 #include "day05/day05-oc.c"
+#include "day06/test-signal.c"
 
 // 函数声明
 void exexWhile();
@@ -47,5 +48,6 @@ int main() {
 
 //    testFile();
     testOc();
+    testSig();
     return 0;
 }
