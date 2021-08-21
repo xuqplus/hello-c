@@ -1,6 +1,10 @@
 #include <stdio.h>
 
-#include "day07/user.cpp"
+#ifndef User_h
+#define User_h
+#include "day07/user.h"
+#endif
+#include "day07/cool-user.cpp"
 
 using namespace std;
 
@@ -31,5 +35,8 @@ int main()
     cout << "uPtr=" << uPtr << ", uPtr->getId()=" << uPtr->getId() << ", uPtr->name=" << uPtr->name << endl;
     uPtr->valueParam(*uPtr);
 
+    // class inheritance
+    CoolUser cuser;
+    cout << cuser.isCool << endl;
     return 0;
 }
