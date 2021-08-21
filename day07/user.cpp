@@ -9,9 +9,9 @@ private:
     int id;
 
 public:
-    int name;
+    string name;
     User(/* args */);
-    User(int id, int name);
+    User(int id, string name);
     int getId();
 };
 
@@ -20,7 +20,7 @@ User::User(/* args */)
     cout << "User::User .." << endl;
 }
 
-User::User(int id, int name)
+User::User(int id, string name)
 {
     User::id = id;
     User::name = name;
