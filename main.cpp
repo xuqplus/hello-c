@@ -24,5 +24,12 @@ int main()
     user.valueParam(user2);
     user.valueParam(user2);
     cout << "after &user2=" << &user2 << " user2.id=" << user2.getId() << ", user2.name=" << user2.name << endl;
+
+    // class pointer
+    User *uPtr;
+    uPtr = &user2;
+    cout << "uPtr=" << uPtr << ", uPtr->getId()=" << uPtr->getId() << ", uPtr->name=" << uPtr->name << endl;
+    uPtr->valueParam(*uPtr);
+
     return 0;
 }
