@@ -5,6 +5,7 @@
 #include "day07/user.h"
 #endif
 #include "day07/cool-user.cpp"
+#include "day08/thread.cpp"
 
 using namespace std;
 
@@ -38,5 +39,8 @@ int main()
     // class inheritance
     CoolUser cuser;
     cout << cuser.isCool << endl;
+
+    // test pthread
+    test();
     return 0;
 }
