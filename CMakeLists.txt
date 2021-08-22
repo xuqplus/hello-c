@@ -15,3 +15,7 @@ add_executable(tester tester.cpp)
 add_test(test-01 tester)
 add_test(test-02 tester)
 add_test(test-02 hello-c)
+
+# add lib
+add_subdirectory(lib)
+target_link_libraries(hello-c hello-lib)

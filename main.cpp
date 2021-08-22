@@ -9,6 +9,8 @@
 
 using namespace std;
 
+#include "lib/lib.h"
+
 int main()
 {
     printf("hello ..");
@@ -41,6 +43,9 @@ int main()
     cout << cuser.isCool << endl;
 
     // test pthread
-    test();
+    // test();
+
+    // add subdirectory as library
+    lib_f();
     return 0;
 }
