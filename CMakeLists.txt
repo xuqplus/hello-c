@@ -19,3 +19,13 @@ add_test(test-02 hello-c)
 # add lib
 add_subdirectory(lib)
 target_link_libraries(hello-c hello-lib)
+
+# lib curl
+find_package(CURL)
+if(CURL_FOUND)
+    message("curl found")
+else(CURL_FOUND)
+    message(FATAL_ERROR "curl not found")
+endif(CURL_FOUND)
+
+target_link_libraries(tester PUBLIC ${CURL_LIBRARIES})
