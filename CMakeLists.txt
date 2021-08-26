@@ -14,18 +14,22 @@ enable_testing()
 add_executable(tester tester.cpp)
 add_test(test-01 tester)
 add_test(test-02 tester)
-add_test(test-02 hello-c)
+add_test(test-02 tester)
 
 # add lib
 add_subdirectory(lib)
 target_link_libraries(hello-c hello-lib)
 
-# lib curl
-find_package(CURL)
+# the include directions vcpkg showing after libcurl was installed
+# find_package(CURL CONFIG REQUIRED)
+# target_link_libraries(tester PRIVATE CURL::libcurl)
+
+find_package(CURL CONFIG)
 if(CURL_FOUND)
-    message("curl found")
+    message("curl found - " ${CURL_LIBRARIES})
 else(CURL_FOUND)
     message(FATAL_ERROR "curl not found")
 endif(CURL_FOUND)
 
-target_link_libraries(tester PUBLIC ${CURL_LIBRARIES})
+target_link_libraries(tester PRIVATE ${CURL_LIBRARIES})
+target_link_libraries(hello-c ${CURL_LIBRARIES})

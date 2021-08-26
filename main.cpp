@@ -5,7 +5,8 @@
 #include "day07/user.h"
 #endif
 #include "day07/cool-user.cpp"
-#include "day08/thread.cpp"
+// #include "day08/thread.cpp"
+#include "day09/test_curl.cpp"
 
 using namespace std;
 
@@ -47,5 +48,7 @@ int main()
 
     // add subdirectory as library
     lib_f();
+
+    test_curl();
     return 0;
 }
